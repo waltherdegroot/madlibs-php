@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mad Libs</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+	<header>
+		<h1>Mad Libs</h1>
+		<div id="menu">
+			<nav>
+				<ul>
+					<li><a href="./index.html">Er heerst paniek...</a></li>
+					<li><a href="./onkunde.html">Onkunde</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div id="leftKolom">
+			<h2>Er heerst paniek...</h2>
+			<p>Welk dier zou je nooit als huisdier willen hebben?</p>
+			<p>Wie is de belangrijkste persoon in je leven?</p>
+			<p>In welk land zou je graag willen wonen?</p>
+			<p>Wat doe je als je je verveelt?</p>
+			<p>Met welk speelgoed speelde je als kind het meest?</p>
+			<p>Bij welke docent spijbel je het liefst?</p>
+			<p>Als je &euro; 100.000,- had, wat zou je dan kopen?</p>
+			<p>Wat is je favoriete bezigheid?</p>
+		</div>
+		<div id="rightKolom">
+			<form action="./heerst.php" method="POST">
+				<input type="text" name="animal" class="input" id="first">
+				<input type="text" name="person" class="input">
+				<input type="text" name="country" class="input">
+				<input type="text" name="bored" class="input">
+				<input type="text" name="toys" class="input">
+				<input type="text" name="skipping" class="input">
+				<input type="text" name="money" class="input">
+				<input type="text" name="favorite" class="input">
+				<input type="submit" name="submit" value="versturen">
+			</form>
+		</div>
+	</main>
+	<footer>
+		Created by Walther de Groot
+	</footer>
+</body>
+</html>

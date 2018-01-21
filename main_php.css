@@ -1,0 +1,88 @@
+*{
+
+}
+
+body{
+	background-image: url("./images/background.gif");
+}
+
+main{
+	width: 45%;
+	margin: 0 auto;
+	margin-top: 0px;
+	background-color: #fff;
+	padding-bottom: 30px;
+	padding-top: 1px;
+}
+
+header{
+	width: 45%;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: #545245;
+	padding: 10px 2px 10px 0px;
+	text-align: center;
+	width: 45%;
+	margin: 0 auto;
+	color: white;
+}
+
+nav{
+	padding: 1px 10px 1px 0px;
+}
+
+nav ul li{
+	display: inline-block;
+	font-family: Georgia;
+	margin-right: 15px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h1{
+	color: white;
+	font-size: 135px;
+	margin: 0px;
+}
+
+#menu{
+	background-color: #ad2406;
+}
+
+#verhaal{
+	width: 91%;
+	margin: 0 auto;
+}
+
+#leftKolom{
+	display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-right: 0px;
+    margin-left: 40px;
+    padding-right: 0px;
+    width: 36%;
+}
+
+#rightKolom{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-left: 10px;
+	width: 30%;
+}
+
+#first{
+	margin-top: 87px;
+}
+
+.input{
+	display: block;
+	margin-bottom:35px; 
+	width: 400px;
+}
