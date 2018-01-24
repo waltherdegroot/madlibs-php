@@ -1,3 +1,12 @@
+<?php
+	$ability=$_POST['ability'];
+	$person=$_POST['person'];
+	$number=$_POST['number'];
+	$vacation=$_POST['vacation'];
+	$b_skill=$_POST['b_skill'];
+	$w_skill=$_POST['w_skill'];
+	$happen=$_POST['happen'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,17 +29,7 @@
 	<main>
 		<div id="verhaal">
 			<h2>Onkunde</h2>
-			<?php
-				$ability=$_POST['ability'];
-				$person=$_POST['person'];
-				$number=$_POST['number'];
-				$vacation=$_POST['vacation'];
-				$b_skill=$_POST['b_skill'];
-				$w_skill=$_POST['w_skill'];
-				$happen=$_POST['happen'];
-
-				echo '<p>Er zijn veel mensen die niet kunnen ' .$ability. '. Neem nou ' .$person. '. Zelfs met de hulp van een ' .$vacation. ' of zelfs ' .$number. ' kan ' .$person. ' niet ' .$ability. '. Dat heeft niet te maken met een gebrek aan ' .$b_skill. ', maar met een te veel aan ' .$w_skill. '. Te veel ' .$w_skill. ' leidt tot ' .$happen. ' en dat is niet goed als je wilt ' .$ability. '. Helaas voor ' .$person. '.</p>'
-			?> 
+			<p>Er zijn veel mensen die niet kunnen <?= $ability ?> Neem nou <?= $person ?>. Zelfs met de hulp van een <?= $vacation ?> of zelfs <?= $number ?> kan <?= $person ?> niet <?= $ability ?>. Dat heeft niet te maken met een gebrek aan <?= $b_skill ?>, maar met een te veel aan <?= $w_skill ?>. Te veel <?= $w_skill ?> leidt tot  <?= $happen ?> en dat is niet goed als je wilt <?= $ability?>. Helaas voor <?=$person?>.</p>
 		</div>
 	</main>
 	<footer>
