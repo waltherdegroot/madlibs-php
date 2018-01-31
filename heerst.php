@@ -1,7 +1,7 @@
 <?php
 	$velden = ["animal","person","country","bored","toys","skipping","money","favorite"];
 	foreach($velden as $veld){
-		if(isset($_POST[$veld])){
+		if(isset($_POST[$veld]) && $_POST[$veld] != ""){
 			$$veld=$_POST[$veld];
 		}
 		else{
