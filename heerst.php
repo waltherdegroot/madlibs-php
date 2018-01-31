@@ -1,12 +1,13 @@
 <?php
-	$animal=$_POST['animal'];
-	$person=$_POST['person'];
-	$country=$_POST['country'];
-	$bored=$_POST['bored'];
-	$toys=$_POST['toys'];
-	$skipping=$_POST['skipping'];
-	$money=$_POST['money'];
-	$favorite=$_POST['favorite'];
+	$velden = ["animal","person","country","bored","toys","skipping","money","favorite"];
+	foreach($velden as $veld){
+		if(isset($_POST[$veld])){
+			$$veld=$_POST[$veld];
+		}
+		else{
+			header("Location: ./index.html");
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html>

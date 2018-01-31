@@ -1,11 +1,13 @@
 <?php
-	$ability=$_POST['ability'];
-	$person=$_POST['person'];
-	$number=$_POST['number'];
-	$vacation=$_POST['vacation'];
-	$b_skill=$_POST['b_skill'];
-	$w_skill=$_POST['w_skill'];
-	$happen=$_POST['happen'];
+	$velden = ["ability","person","number","vacation","b_skill","w_skill","happen"];
+	foreach($velden as $veld){
+		if(isset($_POST[$veld])){
+			$$veld=$_POST[$veld];
+		}
+		else{
+			header("Location: ./onkunde.html");
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html>
